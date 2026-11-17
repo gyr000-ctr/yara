@@ -1,6 +1,7 @@
 MODULE(tests)
 MODULE(pe)
 MODULE(elf)
+MODULE(java)
 MODULE(math)
 MODULE(time)
 MODULE(console)

@@ -87,6 +87,8 @@ MODULES =  libyara/modules/tests/tests.c
 
 MODULES += libyara/modules/elf/elf.c
 
+MODULES += libyara/modules/java/java.c
+
 MODULES += libyara/modules/math/math.c
 
 MODULES += libyara/modules/time/time.c
@@ -325,6 +327,9 @@ test_pe_LDFLAGS = -static
 test_elf_SOURCES = tests/test-elf.c tests/util.c
 test_elf_LDADD = libyara.la
 test_elf_LDFLAGS = -static
+test_java_SOURCES = tests/test-java.c tests/util.c
+test_java_LDADD = libyara.la
+test_java_LDFLAGS = -static
 test_version_SOURCES = tests/test-version.c tests/util.c
 test_version_LDADD = libyara.la
 test_version_LDFLAGS = -static
@@ -367,6 +372,7 @@ check_PROGRAMS = \
   test-rules \
   test-pe \
   test-elf \
+  test-java \
   test-version \
   test-bitmask \
   test-math \
